@@ -5,10 +5,10 @@ echo  "hello git\n";
 
 
 
-function add($a,$b)
+function add(...$param)
 {
-    return $a+$b;
+    return array_sum($param);
 }
 
 
-echo add(20,30);
+echo  add(2,3,5,6);
